@@ -9,4 +9,4 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
       - name: Show metadata
-        run: echo "${{ github }}"
+        run: echo "${{ toJSON(github) }}"
