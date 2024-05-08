@@ -1,0 +1,15 @@
+name: GitHub Actions Demo
+run-name: 
+on: [push, workflow_dispatch]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: lint
+        run: npm run-script lint
+      - name: test
+        run: npm run-script test
+      - name: build
+        run: npm run-script build
