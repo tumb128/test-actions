@@ -1,8 +1,7 @@
-name: GitHub Actions Demo
-run-name: 
+name: lint,test,build
 on: [push, workflow_dispatch]
 jobs:
-  Explore-GitHub-Actions:
+  lint-test-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
